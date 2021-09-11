@@ -18,5 +18,10 @@ public class NumericSystemConverter {
         binNumber.convert(decimalNumber);
         System.out.print("\n");
 
+        DecToOctalConverter octNumber = new DecToOctalConverter();
+        System.out.print("The octal form of " + decimalNumber + " is: ");
+        octNumber.convert(decimalNumber);
+        System.out.print("\n");
+
     }
 }
