@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class DecToHexConverter {
+public class DecToHexConverter extends Converter {
 
     ArrayList<String> bits = new ArrayList<>();
 
     int index = 0;
 
-    public void convertDecimalToHex(int quotient) {
+    public void convert(int quotient) {
         do {
             switch (quotient % 16) {
                 case 10 -> {
