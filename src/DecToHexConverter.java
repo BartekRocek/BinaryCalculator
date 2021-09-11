@@ -5,7 +5,6 @@ public class DecToHexConverter {
 
     ArrayList<String> bits = new ArrayList<>();
 
-//    int quotient;
     int index = 0;
 
     public void convertDecimalToHex(int quotient) {
