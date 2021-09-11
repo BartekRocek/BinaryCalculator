@@ -32,5 +32,13 @@ public class BinaryConverter {
         for (Integer bit : bits) {
             System.out.print(bit + " ");
         }
+
+        System.out.println("\nEnter a decimal number to convert it to a hexadecimal form");
+        decimalNumber = scanner.nextInt();
+
+        DecToHexConverter hexNumber = new DecToHexConverter();
+        System.out.print("\nThe hexadecimal number of " + decimalNumber + " is: ");
+        hexNumber.convertDecimalToHex(decimalNumber);
+
     }
 }
