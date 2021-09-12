@@ -9,17 +9,12 @@ public class DecToBinaryConverter extends Converter {
 
     public void convert(int quotient) {
         do {
-            switch (quotient % 2) {
-                case 0 -> {
-                    bits.add(index, 0);
-                    index++;
-                }
-                case 1 -> {
-                    bits.add(index, 1);
-                    index++;
-                }
-                default -> throw new IllegalStateException("Unexpected value: " + quotient % 2);
+            if (quotient % 2 == 0) {
+                bits.add(index, 0);
+            } else {
+                bits.add(index, 1);
             }
+            index++;
             quotient /= 2;
         } while (quotient > 0);
 
