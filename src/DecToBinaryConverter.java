@@ -25,10 +25,8 @@ public class DecToBinaryConverter extends Converter {
 
         Collections.reverse(bits);
 
-        for (int i = 0; i < bits.size(); i++) {
-            Integer bit = bits.get(i);
-            if (i % 4 == 0) System.out.print(" ");
-            System.out.print(bit);
+        for (Integer bit : bits) {
+            System.out.print(bit + " ");
         }
     }
 }
